@@ -30,7 +30,8 @@ while True:
         contador = 1
         for each in json_data["route"]["legs"][0]["maneuvers"]:
             print("Paso No. " + str(contador) + ": " + (each["narrative"]))
-                  #+ "(" + str("{:2f".format((each["distance"])*1.61 + "Kms. ")))
+            #se describe paso por paso la ruta a seguir
+            #+ "(" + str("{:2f".format((each["distance"])*1.61 + "Kms. ")))
             #test de integración
             contador = contador + 1
             print("------FIN DE INSTRUCCIONES DE LA RUTA------")
